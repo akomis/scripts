@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Copy files to local directory
+# .config/ files
+cp -r  ~/.config/i3/* ~/projects/dotfiles/i3
+cp -r ~/.config/polybar/* ~/projects/dotifiles/polybar
+cp -r ~/.config/cava/* ~/projects/dotfiles/cava
+cp -r ~/.config/gtk-2.0/* ~/projects/dotfiles/gtk-2.0
+cp -r ~/.config/gtk-3.0/* ~/projects/dotfiles/gtk-3.0
+
+# ~ files 
+cp ~/.bashrc ~/projects/dotfiles/other
+cp ~/.bash_profile ~/projects/dotfiles/other
+cp ~/.bash_logout ~/projects/dotfiles/other
+cp ~/.gtkrc-2.0 ~/projects/dotfiles/other
+cp ~/.profile ~/projects/dotfiles/other
+cp ~/.vimrc ~/projects/dotfiles/other
+cp ~/.xinitrc ~/projects/dotfiles/other
+cp ~/.Xresources ~/projects/dotfiles/other
+
+
+# git procedures
+git -C ~/projects/dotfiles add -A
+git -C ~/projects/dotfiles commit
+git -C ~/projects/dotfiles push

@@ -2,7 +2,7 @@
 A variety of (bash) shell  scripts that make everyday easier.
 
 ## Script Description
-**pdots**
+**pdots**\n
 Push ~/projects/dotfiles to [dotfiles repo](https://github.com/akomis/dotfiles)
 
 

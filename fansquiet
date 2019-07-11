@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo opencorsairlink --device 0
+sudo opencorsairlink --device 0 --led channel=0,mode=0,color=00FF00
+sudo opencorsairlink --device 0 --fan channel=0,mode=3
+sudo opencorsairlink --device 0 --pump mode=5

@@ -7,6 +7,7 @@ cp -r ~/.config/polybar/* ~/projects/dotifiles/polybar
 cp -r ~/.config/cava/* ~/projects/dotfiles/cava
 cp -r ~/.config/gtk-2.0/* ~/projects/dotfiles/gtk-2.0
 cp -r ~/.config/gtk-3.0/* ~/projects/dotfiles/gtk-3.0
+cp -r ~/.config/dunst/dunstrc ~/projects/dotfiles/dunst
 
 # ~ files 
 cp ~/.bashrc ~/projects/dotfiles/other

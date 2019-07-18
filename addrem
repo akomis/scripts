@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DATE=$(date +'%b %d %Y')
+ARG="${@:2}"
+
+echo "REM $DATE $1 MSG $ARG" >> ~/.config/remind/temp.rem

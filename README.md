@@ -8,7 +8,7 @@ Usage: addrem XX:XX Reminder message..
 
 
 **pdots**
-Push ~/projects/dotfiles to [dotfiles repo](https://github.com/akomis/dotfiles)
+Push ~/projects/dotfiles to my [dotfiles repo](https://github.com/akomis/dotfiles)
 
 
 **psc**

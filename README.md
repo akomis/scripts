@@ -14,6 +14,8 @@ Push ~/projects/dotfiles to my [dotfiles repo](https://github.com/akomis/dotfile
 **psc**
 Push ~/projects/scripts to Github _(this repository)_
 
+**startup.sh**
+Loads i3 layouts for each workspace and starts up certain programs on login
 
 **status**
 Print useful information to the user. 

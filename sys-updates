@@ -7,6 +7,6 @@ fi
 if [ "$updates" -gt 0 ]; then
     echo "System status: $updates updates ready"
 else
-    echo ""
+    echo "System up-to date"
 fi
 

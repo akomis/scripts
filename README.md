@@ -31,5 +31,4 @@ Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment)  using
 
 
 ## Further Changes/Optimizations
-* General Github pushing automation (merge pushing scripts)
 * Enrich status script

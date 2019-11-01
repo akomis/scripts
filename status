@@ -1,13 +1,14 @@
 #!/bin/bash
 
-# Check # of available updates
-sys-updates
-echo ""
-
 # Print todo list with numbering
 echo "Todo List"
 nl ~/.todo
 echo ""
 
 # Print reminders for the day
-remind  ~/.config/remind/reminders.rem
+remind ~/.config/remind/reminders.rem
+echo ""
+
+# Check # of available updates
+sys-updates
+echo ""

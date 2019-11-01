@@ -5,6 +5,7 @@ i3-msg "workspace 1; append_layout ~/.config/i3/layouts/ws-1.json"&
 i3-msg "workspace 2; append_layout ~/.config/i3/layouts/ws-2.json"&
 i3-msg "workspace 3; append_layout ~/.config/i3/layouts/ws-3.json"&
 i3-msg "workspace 4; append_layout ~/.config/i3/layouts/ws-4.json"&
+i3-msg "workspace 5; append_layout ~/.config/i3/layouts/ws-5.json"&
 
 # Startup programs to be swallowed by i3
 #  ws-1
@@ -18,8 +19,10 @@ atom&
 urxvt -name "w3t1" -e $SHELL -c '$SHELL -i'&
 #  ws-4
 mailspring&
+#  ws-5
+slack&
 #  ws-9
-i3-msg 'workspace 9; exec urxvt -e $SHELL -c 'cava''
+i3-msg 'workspace 9; exec urxvt -e $SHELL -c 'cava''&
 #  ws-10
 spotify&
 
@@ -28,4 +31,4 @@ tunefans&
 dunst -config ~/.config/dunst/dunstrc&
 
 
-i3-msg "workspace 1"
+i3-msg 'exec sleep 1; workspace 1'

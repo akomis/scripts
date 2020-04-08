@@ -3,7 +3,7 @@
 # Copy files to local directory
 # .config/ files
 cp -r  ~/.config/i3/* ~/projects/dotfiles/i3
-cp -r ~/.config/polybar/* ~/projects/dotifiles/polybar
+cp -r ~/.config/polybar/* ~/projects/dotfiles/polybar
 cp -r ~/.config/cava/* ~/projects/dotfiles/cava
 cp -r ~/.config/gtk-2.0/* ~/projects/dotfiles/gtk-2.0
 cp -r ~/.config/gtk-3.0/* ~/projects/dotfiles/gtk-3.0

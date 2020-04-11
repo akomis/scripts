@@ -3,13 +3,18 @@
 neofetch --disable uptime
 
 # Print todo list with numbering
-echo "Todo List"
+echo "${BOLD}${C6}Todo List${RESET}"
 nl ~/.todo
 echo ""
 
 # Check # of available updates
-sys-updates
-echo ""
+if ! updates=$(checkupdates 2> /dev/null | wc -l ); then
+    updates=0
+fi
 
-ls
+if [ "$updates" -gt 0 ]; then
+    echo "${BOLD}${C6}System status:${RESET} $updates updates ready"
+else
+    echo "${BOLD}${C6}System up-to date${RESET}"
+fi
 echo ""

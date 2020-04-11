@@ -4,25 +4,24 @@ feh --bg-scale $HOME/pictures/wallpapers/wallpaper.jpg&
 bash $HOME/.config/polybar/launch.sh&
 
 # Load saved workspace layouts
+i3-msg "workspace 1; append_layout ~/.config/i3/layouts/ws-1.json"&
 i3-msg "workspace 3; append_layout ~/.config/i3/layouts/ws-3.json"&
 
-# Startup programs to be swallowed by i3
 #  ws-1
-i3-msg 'workspace 1; exec urxvt -name "w1t1" -e $SHELL -c 'status; $SHELL -i''&
-i3-msg 'workspace 1; exec urxvt -name "w1t32" -e $SHELL -c 'gotop -a -s -c solarized16-dark''&
+termite --name="w1left" -e 'term-home'&
+termite --name="w1right" -e 'gotop -a -c solarized16-dark'&
 
 #  ws-2
-i3-msg 'workspace 2; exec firefox'&
+i3-msg 'workspace 2; exec firefox https://calendar.google.com/calendar/r https://duckduckgo.com/ https://www.messenger.com https://www.reddit.com/'&
 #  ws-3
 atom&
-firefox -browser&
-urxvt -name "w3t1" -e $SHELL -c 'cd ~/projects/; $SHELL -i'&
+firefox --new-instance&
+termite --name="w3t1" -e 'term-dev'&
 #  ws-4
 i3-msg 'workspace 4; exec thunderbird'&
-#  ws-5
-i3-msg 'workspace 5; exec teams'&
+
 #  ws-9
-i3-msg 'workspace 9; exec urxvt -e $SHELL -c 'cava''&
+i3-msg 'workspace 9; exec termite -e 'cava''&
 #  ws-10
 spotify&
 

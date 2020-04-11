@@ -2,10 +2,6 @@
 A variety of (bash) shell  scripts that make everyday easier.
 
 ## Script Description
-**addrem**
-Adds a reminder to temp.rem for later in the day.
-Usage: addrem XX:XX Reminder message..
-
 
 **pdots**
 Push ~/projects/dotfiles to my [dotfiles repo](https://github.com/akomis/dotfiles)
@@ -14,7 +10,7 @@ Push ~/projects/dotfiles to my [dotfiles repo](https://github.com/akomis/dotfile
 **psc**
 Push ~/projects/scripts to Github _(this repository)_
 
-**startup.sh**
+**startup**
 Loads i3 layouts for each workspace and starts up certain programs on login
 
 **status**

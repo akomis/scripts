@@ -3,25 +3,26 @@
 feh --bg-scale $HOME/pictures/wallpapers/wallpaper.jpg&
 bash $HOME/.config/polybar/launch.sh&
 
-# Load saved workspace layouts
-i3-msg "workspace 1; append_layout ~/.config/i3/layouts/ws-1.json"&
-i3-msg "workspace 3; append_layout ~/.config/i3/layouts/ws-3.json"&
-
 #  ws-1
+i3-msg "workspace 1; append_layout ~/.config/i3/layouts/ws-1.json"&
 termite --name="w1left" -e 'term-home'&
 termite --name="w1right" -e 'gotop -a -c solarized16-dark'&
 
 #  ws-2
 i3-msg 'workspace 2; exec firefox https://calendar.google.com/calendar/r https://duckduckgo.com/ https://www.messenger.com https://www.reddit.com/'&
+
 #  ws-3
+i3-msg "workspace 3; append_layout ~/.config/i3/layouts/ws-3.json"&
 atom&
-firefox --new-instance&
+firefox&
 termite --name="w3t1" -e 'term-dev'&
+
 #  ws-4
 i3-msg 'workspace 4; exec thunderbird'&
 
 #  ws-9
 i3-msg 'workspace 9; exec termite -e 'cava''&
+
 #  ws-10
 spotify&
 

@@ -1,0 +1,14 @@
+#!/bin/bash
+# bups is short for backups
+
+bupsloc="/mnt/hdd/backup/projects-archive"
+dtstamp=$(date +"%Y-%m-%d-%H%M")
+bupsnum=$(ls $bupsloc | wc -w)
+
+# Keep at maximum 14 (~2 weeks worth of) backups
+if [ $bupsnum -eq 14 ]
+then
+	rm -rf $(ls $bupsloc -tr | head -1)
+fi
+
+rsync -a -r --quiet $HOME/projects $bupsloc/$dtstamp

@@ -18,7 +18,3 @@ Print useful information to the user.
 **tunefans**
 Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment)  using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)
 
-
-
-## Further Changes/Optimizations
-* Enrich status script

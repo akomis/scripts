@@ -7,7 +7,8 @@ rsync -r --delete ~/.config/polybar/* ~/projects/dotfiles/polybar
 rsync -r --delete ~/.config/cava/* ~/projects/dotfiles/cava
 rsync -r --delete ~/.config/gtk-2.0/* ~/projects/dotfiles/gtk-2.0
 rsync -r --delete ~/.config/gtk-3.0/* ~/projects/dotfiles/gtk-3.0
-rsync -r --delete ~/.config/dunst/dunstrc ~/projects/dotfiles/dunst
+rsync -r --delete ~/.config/dunst/* ~/projects/dotfiles/dunst
+rsync -r --delete ~/.config/termite/* ~/projects/dotfiles/termite
 
 # ~ files
 rsync ~/.bashrc ~/projects/dotfiles/other

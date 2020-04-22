@@ -28,8 +28,8 @@ spotify&
 
 # Other startup programs
 rsync -a -r --delete --quiet --exclude={'Games','go'} $HOME /mnt/hdd/backup&
-buproj&
 dunst -config ~/.config/dunst/dunstrc&
+backup-projects&
 tunefans&
 udiskie&
 

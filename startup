@@ -4,7 +4,7 @@ feh --bg-scale $HOME/pictures/wallpapers/wallpaper.jpg&
 bash $HOME/.config/polybar/launch.sh&
 
 #  ws-1
-i3-msg 'workspace 1; append_layout ~/.config/i3/layouts/ws-1.json'&
+i3-msg 'workspace 1; append_layout ~/.config/i3/layouts/ws-1.json'
 termite --name="w1left" -e 'term-home'&
 termite --name="w1right" -e 'gotop -a -c solarized16-dark'&
 
@@ -12,7 +12,7 @@ termite --name="w1right" -e 'gotop -a -c solarized16-dark'&
 i3-msg 'workspace 2; exec firefox https://calendar.google.com/calendar/r https://www.messenger.com https://www.youtube.com/feed/subscriptions https://www.reddit.com/'&
 
 #  ws-3
-i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'&
+i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'
 atom&
 i3-msg 'workspace 3; exec firefox'&
 termite --name="w3t1" -e 'term-dev'&

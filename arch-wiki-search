@@ -1,0 +1,8 @@
+#!/bin/bash
+
+search="$(echo | dmenu -nb "#0D0D0D" -nf "#676767" -sb "#0F94D2" -sf "#F2F2F2" -p "Arch Wiki Search: ")"
+
+if [ -n "$search" ]
+then
+	$BROWSER https://wiki.archlinux.org/index.php?search=$search
+fi

@@ -18,5 +18,8 @@ Print useful information to the user.
 **tunefans**
 Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment)  using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)
 
-**buproj**
+**backup-projects**
 Keeps backup archives for directory ~/projects
+
+**arch-wiki-search**
+A prompt that appears on the desktop (using dmenu) to then search on the [Arch Wiki](https://wiki.archlinux.org/)

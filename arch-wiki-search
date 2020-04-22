@@ -1,8 +1,8 @@
 #!/bin/bash
 
-search="$(echo | dmenu -nb "#0D0D0D" -nf "#676767" -sb "#0F94D2" -sf "#F2F2F2" -p "Arch Wiki Search: ")"
+search="$(find /usr/share/doc/arch-wiki/html/en/ -name "*.html" | cut -d "/" -f8 | cut -d "." -f1 | uniq -u | dmenu -nb "#0D0D0D" -nf "#E2E2E2" -sb "#0F94D2" -sf "#F2F2F2" -p "Arch Wiki Search: ")"
 
 if [ -n "$search" ]
 then
-	$BROWSER https://wiki.archlinux.org/index.php?search=$search
+	$BROWSER https://wiki.archlinux.org/index.php?search="$search"
 fi

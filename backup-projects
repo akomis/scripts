@@ -1,7 +1,8 @@
 #!/bin/bash
 # bups is short for backups
+# $BACKUP is an enviromental variable that holds the backup directory
 
-bupsloc="/mnt/hdd/backup/projects-archive"
+bupsloc="$BACKUP/projects-archive"
 dtstamp=$(date +"%Y-%m-%d-%H%M")
 bupsnum=$(ls $bupsloc | wc -w)
 

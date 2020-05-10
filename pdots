@@ -2,26 +2,24 @@
 
 # Sync files to local directory
 # .config/ files
-rsync -r --delete ~/.config/i3/* ~/projects/dotfiles/i3
-rsync -r --delete ~/.config/polybar/* ~/projects/dotfiles/polybar
-rsync -r --delete ~/.config/cava/* ~/projects/dotfiles/cava
-rsync -r --delete ~/.config/gtk-2.0/* ~/projects/dotfiles/gtk-2.0
-rsync -r --delete ~/.config/gtk-3.0/* ~/projects/dotfiles/gtk-3.0
-rsync -r --delete ~/.config/dunst/* ~/projects/dotfiles/dunst
-rsync -r --delete ~/.config/termite/* ~/projects/dotfiles/termite
+rsync -r --delete $HOME/.config/i3 $HOME/projects/dotfiles
+rsync -r --delete $HOME/.config/polybar $HOME/projects/dotfiles
+rsync -r --delete $HOME/.config/cava $HOME/projects/dotfiles
+rsync -r --delete $HOME/.config/gtk-2.0 $HOME/projects/dotfiles
+rsync -r --delete $HOME/.config/gtk-3.0 $HOME/projects/dotfiles
+rsync -r --delete $HOME/.config/dunst $HOME/projects/dotfiles
+rsync -r --delete $HOME/.config/termite $HOME/projects/dotfiles
 
-# ~ files
-rsync ~/.bashrc ~/projects/dotfiles/other
-rsync ~/.bash_profile ~/projects/dotfiles/other
-rsync ~/.bash_logout ~/projects/dotfiles/other
-rsync ~/.gtkrc-2.0 ~/projects/dotfiles/other
-rsync ~/.profile ~/projects/dotfiles/other
-rsync ~/.vimrc ~/projects/dotfiles/other
-rsync ~/.xinitrc ~/projects/dotfiles/other
-rsync ~/.Xresources ~/projects/dotfiles/other
-
+# $HOME files
+rsync $HOME/.bashrc $HOME/projects/dotfiles/other/
+rsync $HOME/.bash_profile $HOME/projects/dotfiles/other/
+rsync $HOME/.bash_logout $HOME/projects/dotfiles/other/
+rsync $HOME/.gtkrc-2.0 $HOME/projects/dotfiles/other/
+rsync $HOME/.vimrc $HOME/projects/dotfiles/other/
+rsync $HOME/.xinitrc $HOME/projects/dotfiles/other/
+rsync $HOME/.Xresources $HOME/projects/dotfiles/other/
 
 # git procedures
-git -C ~/projects/dotfiles add -A
-git -C ~/projects/dotfiles commit
-git -C ~/projects/dotfiles push
+git -C $HOME/projects/dotfiles add -A
+git -C $HOME/projects/dotfiles commit
+git -C $HOME/projects/dotfiles push

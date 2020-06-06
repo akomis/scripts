@@ -1,0 +1,15 @@
+#!/bin/bash
+# Works best for simple (usually personal) projects where a general push is sufficient and doesn't cause any issues
+# For maximum automation it is recommended to use SSH to push to the remote repository
+
+if [ -z "$1" ]
+then
+	dir=$(pwd)
+else
+	dir=$1
+fi
+
+# git procedures
+git -C $dir add -A
+git -C $dir commit
+git -C $dir push

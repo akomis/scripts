@@ -2,7 +2,7 @@
 
 neofetch --disable uptime local_ip public_ip
 
-cal
+cal -3
 
 # Print todo list with numbering
 echo "${BOLD}${C6}Todo List${RESET}"

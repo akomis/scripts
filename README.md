@@ -6,16 +6,16 @@ A variety of (bash) shell  scripts that make everyday easier.
 Acquire all dotfiles and push them to my [dotfiles repo](https://github.com/akomis/dotfiles)
 
 **push**
-Push current working repository to Github
+Push a local git repository to Github
 
 **startup**
 Loads i3 layouts for each workspace and starts up certain programs on login
 
 **status**
-Print useful information to the user about the system.
+Print useful information to the user about the system
 
 **tunefans**
-Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment)  using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)
+Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment) using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)
 
 **backup-projects**
 Keeps backup archives for directory ~/projects

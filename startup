@@ -20,6 +20,9 @@ termite --name="w3t1" -e 'term-dev'&
 #  ws-4
 i3-msg 'workspace 4; exec thunderbird'&
 
+#  ws-5
+i3-msg 'workspace 5; exec signal-desktop-beta'&
+
 #  ws-9
 i3-msg 'workspace 9; exec termite -e 'cava''&
 

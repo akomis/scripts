@@ -1,4 +1,4 @@
-# Set of general automation scripts
+# Set of General Automation Scripts
 A variety of (bash) shell  scripts that make everyday easier.
 
 ## Script Description

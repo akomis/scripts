@@ -2,9 +2,6 @@
 A variety of (bash) shell  scripts that make everyday easier.
 
 ## Script Description
-**pdots**
-Acquire all dotfiles and push them to my [dotfiles repo](https://github.com/akomis/dotfiles)
-
 **push**
 Push a local git repository to Github
 

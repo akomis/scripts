@@ -2,20 +2,20 @@
 A variety of (bash) shell  scripts that make everyday easier.
 
 ## Script Description
-**push**
+**push**  
 Push a local git repository to Github
 
-**startup**
+**startup**  
 Loads i3 layouts for each workspace and starts up certain programs on login
 
-**status**
+**status**  
 Print useful information to the user about the system
 
-**tunefans**
+**tunefans**  
 Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment) using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)
 
-**backup-projects**
+**backup-projects**  
 Keeps backup archives for directory ~/projects
 
-**arch-wiki-search**
+**arch-wiki-search**  
 A prompt that appears on the desktop (using dmenu) to then search on the [Arch Wiki](https://wiki.archlinux.org/)

@@ -23,6 +23,9 @@ i3-msg 'workspace 4; exec thunderbird'&
 #  ws-5
 signal-desktop-beta&
 
+#  ws-6
+teams&
+
 #  ws-9
 i3-msg 'workspace 9; exec termite -e 'cava''&
 

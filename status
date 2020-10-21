@@ -7,7 +7,7 @@ echo ""
 
 # Print todo list with numbering
 echo "${BOLD}${C6}Todo List${RESET}"
-if [ "$(nl ~/.todo)" -gt 0 ]; then
+if [ "$(wc -l ~/.todo | cut -d" " -f1)" -gt 0 ]; then
 	nl ~/.todo
 else
     echo "There is nothing to do."

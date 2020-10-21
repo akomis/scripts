@@ -7,7 +7,12 @@ echo ""
 
 # Print todo list with numbering
 echo "${BOLD}${C6}Todo List${RESET}"
-nl ~/.todo
+if [ "$(nl ~/.todo)" -gt 0 ]; then
+	nl ~/.todo
+else
+    echo "There is nothing to do."
+fi
+
 echo ""
 
 # Check # of available updates

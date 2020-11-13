@@ -1,0 +1,9 @@
+#!/bin/bash
+
+default_gateway="$(ip r | grep ^def | cut -d" " -f3)"
+if [ -z $BROWSER ]; then
+	# The default browser in most linux distributions
+	BROWSER="firefox"
+fi
+
+$BROWSER http://$default_gateway

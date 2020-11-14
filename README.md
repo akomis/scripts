@@ -20,5 +20,8 @@ Keeps backup archives for directory ~/projects
 **router**
 Opens the settings page of the default gateway (router)
 
+**convertaudio**
+Converts all audio files of format $1 to format $2 on current directory.
+
 **arch-wiki-search**  
 A prompt that appears on the desktop (using dmenu) to then search on the [Arch Wiki](https://wiki.archlinux.org/)

@@ -14,9 +14,6 @@ Print useful information to the user about the system
 **tunefans**  
 Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment) using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)
 
-**backup-projects**  
-Keeps backup archives for directory ~/projects
-
 **router**
 Opens the settings page of the default gateway (router)
 

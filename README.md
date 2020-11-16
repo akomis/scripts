@@ -14,10 +14,10 @@ Print useful information to the user about the system
 **tunefans**  
 Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment) using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)
 
-**router**
+**router**  
 Opens the settings page of the default gateway (router)
 
-**convertaudio**
+**convertaudio**  
 Converts all audio files of format $1 to format $2 on current directory.
 
 **arch-wiki-search**  

@@ -26,6 +26,9 @@ signal-desktop-beta&
 #  ws-6
 teams&
 
+# ws-7
+joplin-desktop&
+
 #  ws-9
 i3-msg 'workspace 9; exec termite -e 'cava''&
 

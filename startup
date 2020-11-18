@@ -9,7 +9,7 @@ termite --name="w1left" -e 'term-home'&
 termite --name="w1right" -e 'gotop -a -c solarized16-dark'&
 
 #  ws-2
-i3-msg 'workspace 2; exec firefox https://calendar.google.com/calendar/r https://www.youtube.com/feed/subscriptions https://www.reddit.com/'&
+i3-msg 'workspace 2; exec firefox https://akomis.webo.family/index.php/apps/calendar/dayGridMonth/now https://www.youtube.com/feed/subscriptions https://www.reddit.com/'&
 
 #  ws-3
 i3-msg 'workspace 3; append_layout ~/.config/i3/layouts/ws-3.json'

@@ -36,10 +36,11 @@ i3-msg 'workspace 9; exec termite -e 'cava''&
 spotify&
 
 # Other startup programs
-rsync -a -r --delete --quiet --exclude={'Games','go'} $HOME $BACKUP&
-rsync -a -r --delete --quiet --exclude={'Games','go'} $HOME $CLOUD/backup&
+rsync -a -r --delete --quiet --exclude={'Games','go','.cache','pycharm','anaconda3'} $HOME $BACKUP&
+rsync -a -r --delete --quiet $HOME/projects $CLOUD/backup&
 dunst -config ~/.config/dunst/dunstrc&
 tunefans&
 udiskie&
+nextcloud --background&
 
 i3-msg 'workspace 1'

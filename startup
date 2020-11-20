@@ -36,9 +36,9 @@ i3-msg 'workspace 9; exec termite -e 'cava''&
 spotify&
 
 # Other startup programs
-rsync -a -r --delete --quiet --exclude={'Games','go','projects'} $HOME $BACKUP&
+rsync -a -r --delete --quiet --exclude={'Games','go'} $HOME $BACKUP&
+rsync -a -r --delete --quiet --exclude={'Games','go'} $HOME $CLOUD/backup&
 dunst -config ~/.config/dunst/dunstrc&
-backup-projects&
 tunefans&
 udiskie&
 

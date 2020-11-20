@@ -37,7 +37,6 @@ spotify&
 
 # Other startup programs
 rsync -a -r --delete --quiet --exclude={'Games','go','.cache','pycharm','anaconda3'} $HOME $BACKUP&
-rsync -a -r --delete --quiet $HOME/projects $CLOUD/backup&
 dunst -config ~/.config/dunst/dunstrc&
 tunefans&
 udiskie&

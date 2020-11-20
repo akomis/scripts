@@ -1,7 +1,7 @@
 #!/bin/bash
 
 feh --bg-scale $HOME/pictures/wallpapers/wallpaper.jpg&
-bash $HOME/.config/polybar/launch.sh&
+./$HOME/.config/polybar/launch.sh&
 
 #  ws-1
 i3-msg 'workspace 1; append_layout ~/.config/i3/layouts/ws-1.json'
@@ -36,7 +36,7 @@ i3-msg 'workspace 9; exec termite -e 'cava''&
 spotify&
 
 # Other startup programs
-rsync -a -r --delete --quiet --exclude={'Games','go','.cache','pycharm','anaconda3'} $HOME $BACKUP&
+rsync -a -r --delete --quiet --exclude-from="$HOME/.ignore" $HOME $BACKUP&
 dunst -config ~/.config/dunst/dunstrc&
 tunefans&
 udiskie&

@@ -24,9 +24,9 @@ i3-msg 'workspace 4; exec thunderbird'&
 signal-desktop-beta&
 
 #  ws-6
-if [[ $(date +%u) -eq 5 || $(date +%u) -eq 2 ]]; then
-	teams&
-fi
+#if [[ $(date +%u) -eq 5 || $(date +%u) -eq 2 ]]; then
+#	teams&
+#fi
 
 # ws-7
 joplin-desktop&

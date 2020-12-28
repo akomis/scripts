@@ -43,5 +43,6 @@ dunst -config ~/.config/dunst/dunstrc&
 tunefans&
 udiskie&
 nextcloud --background&
+protonmail-bridge --noninteractive&
 
 i3-msg 'workspace 1'

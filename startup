@@ -18,6 +18,7 @@ i3-msg 'workspace 3; exec firefox'&
 termite --name="w3t1" -e 'term-dev'&
 
 #  ws-4
+protonmail-bridge --noninteractive &&\
 i3-msg 'workspace 4; exec thunderbird'&
 
 #  ws-5
@@ -25,7 +26,7 @@ signal-desktop-beta&
 
 #  ws-6
 #if [[ $(date +%u) -eq 5 || $(date +%u) -eq 2 ]]; then
-#	teams&
+teams&
 #fi
 
 # ws-7
@@ -43,6 +44,6 @@ dunst -config ~/.config/dunst/dunstrc&
 tunefans&
 udiskie&
 nextcloud --background&
-protonmail-bridge --noninteractive&
+
 
 i3-msg 'workspace 1'

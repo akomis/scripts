@@ -18,19 +18,19 @@ i3-msg 'workspace 3; exec firefox'&
 termite --name="w3t1" -e 'term-dev'&
 
 #  ws-4
-protonmail-bridge --noninteractive &&\
+protonmail-bridge --noninteractive&
 i3-msg 'workspace 4; exec thunderbird'&
 
 #  ws-5
 signal-desktop-beta&
 
-#  ws-6
+# ws-6
+joplin-desktop&
+
+#  ws-7
 #if [[ $(date +%u) -eq 5 || $(date +%u) -eq 2 ]]; then
 teams&
 #fi
-
-# ws-7
-joplin-desktop&
 
 #  ws-9
 i3-msg 'workspace 9; exec termite -e 'cava''&

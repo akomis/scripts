@@ -39,11 +39,9 @@ i3-msg 'workspace 9; exec termite -e 'cava''&
 spotify&
 
 # Other startup programs
-rsync -a -r --delete --quiet --exclude-from="$HOME/.ignore" $HOME $BACKUP&
 dunst -config ~/.config/dunst/dunstrc&
 tunefans&
 udiskie&
 nextcloud --background&
-
 
 i3-msg 'workspace 1'

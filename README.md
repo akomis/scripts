@@ -1,7 +1,7 @@
 # Set of General Automation Scripts
 A variety of (bash) shell  scripts that make everyday easier.
 
-
+## Descriptions
 ### arch-wiki-search  
 A prompt that appears on the desktop (using dmenu) to then search on the [Arch Wiki](https://wiki.archlinux.org/)  
 

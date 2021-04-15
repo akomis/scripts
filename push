@@ -10,6 +10,7 @@ else
 fi
 
 # git procedures
+git -C $dir pull
 git -C $dir add -A
 git -C $dir commit
 git -C $dir push

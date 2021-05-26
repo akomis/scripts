@@ -27,11 +27,6 @@ signal-desktop&
 # ws-6
 joplin-desktop&
 
-#  ws-7
-#if [[ $(date +%u) -eq 5 || $(date +%u) -eq 2 ]]; then
-teams&
-#fi
-
 #  ws-9
 i3-msg 'workspace 9; exec termite -e 'cava''&
 

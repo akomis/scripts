@@ -1,5 +1,12 @@
 #!/bin/bash
-sudo opencorsairlink --device 0
-sudo opencorsairlink --device 0 --led channel=0,mode=0,color=00FF00
-sudo opencorsairlink --device 0 --fan channel=0,mode=3
-sudo opencorsairlink --device 0 --pump mode=5
+
+if [ $# -lt 7 ]
+then
+    printf "Insufficient amount of arguments\nUsage: tunefans DEVICE_ID FAN_CHANNEL FAN_MODE LED_CHANNEL LED_MODE LED_COLOR PUMP_MODE"
+    exit 1
+fi
+
+sudo opencorsairlink --device "$1"
+sudo opencorsairlink --device "$1" --fan channel="$2",mode="$3"
+sudo opencorsairlink --device "$1" --led channel="$4",mode="$5",color="$6"
+sudo opencorsairlink --device "$1" --pump mode="$7"

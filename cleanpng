@@ -1,4 +1,12 @@
 #!/bin/bash
+
+if [ -z "$1" ]
+then
+	dir=$(pwd)
+else
+	dir=$1
+fi
+
 mkdir clean
 for file in *.png
 do

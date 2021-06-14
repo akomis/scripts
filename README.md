@@ -1,27 +1,42 @@
 # Set of General Automation Scripts
-A variety of (bash) shell  scripts that make everyday easier.
+A variety of ([bash](https://github.com/gitGNU/gnu_bash)) shell  scripts that make everyday life easier.
 
-## Descriptions
-### arch-wiki-search  
-A prompt that appears on the desktop (using dmenu) to then search on the [Arch Wiki](https://wiki.archlinux.org/)  
+## arch-wiki-search  
+A dmenu prompt to search the [Arch Wiki](https://wiki.archlinux.org/)  
+bash```
+Usage: arch-wiki-search
+```
 
-### cleanpng
-A small script to remove all color correction properties from all png images in the current directory (useful for web use)  
+## cleanpng
+A small script to remove all color correction properties from all png images (useful for web use)  
+Dependencies: `pngcrush`
+bash```
+Usage: cleanpng [DIRECTORY_PATH]
+```
 
-### convertaudio  
-Converts all audio files of format $1 to format $2 on current directory  
+## push  
+Add all modified files, commit and push a local git repository to Github
+Dependencies: `git`  
+bash```
+Usage: push [DIRECTORY_PATH]
+```
 
-### push  
-Add all modified files, commit and push a local git repository to Github  
-
-### router  
+## router  
 Opens the settings page of the default gateway (router)  
+bash```
+Usage: router
+```
 
-### startup  
-Loads i3 layouts for each workspace and starts up certain programs on login  
-
-### status  
+## status  
 Print useful information to the user about the system  
+Dependencies: `neofetch cal checkupdates`
+bash```
+Usage: status
+```
 
-### tunefans  
-Tune fan setup (color) and fan speeds (lower speeds for quiet enviroment) using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)  
+## tunefans  
+Tune fan setup (fan mode, led mode & color and pump mode) and fan speeds using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)  
+Dependencies: `opencorsairlink`
+bash```
+Usage: tunefans DEVICE_ID FAN_CHANNEL FAN_MODE LED_CHANNEL LED_MODE LED_COLOR PUMP_MODE
+```

@@ -15,14 +15,14 @@ Usage: cleanpng [DIRECTORY_PATH]
 ```
 
 ## gitall
-Perform a git command to all git subdirectories
+Perform a git command to all git subdirectories  
 Dependencies: `git`
 ```
 Usage: git GIT_COMMAND [DIRECTORY_PATH]
 ```
 
 ## push  
-Add all modified files, commit and push a local git repository to Github
+Add all modified files, commit and push a local git repository to Github  
 Dependencies: `git`  
 ```
 Usage: push [DIRECTORY_PATH]

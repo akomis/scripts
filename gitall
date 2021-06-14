@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+    printf "Please specify a git operation\n Example: gitall pull"
+    exit 1
+fi
+
+for dir in ./*
+do
+    printf "$dir: "
+    git -C ./$dir $1 || exit 2
+done

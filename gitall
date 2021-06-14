@@ -6,8 +6,15 @@ then
     exit 1
 fi
 
-for dir in ./*
+if [ -z "$2" ]
+then
+	dir=$(pwd)
+else
+	dir=$2
+fi
+
+for subdir in $dir/*
 do
-    printf "$dir: "
-    git -C ./$dir $1 || exit 2
+    printf "$subdir: "
+    git -C ./$subdir $1 || exit 2
 done

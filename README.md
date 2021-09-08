@@ -40,10 +40,3 @@ Dependencies: `neofetch cal checkupdates`
 ```
 Usage: status
 ```
-
-## tunefans  
-Tune fan setup (fan mode, led mode & color and pump mode) and fan speeds using [OpenCorsairLink](https://github.com/audiohacked/OpenCorsairLink)  
-Dependencies: `opencorsairlink`
-```
-Usage: tunefans DEVICE_ID FAN_CHANNEL FAN_MODE LED_CHANNEL LED_MODE LED_COLOR PUMP_MODE
-```

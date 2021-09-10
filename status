@@ -1,8 +1,11 @@
 #!/bin/bash
 
-neofetch --disable uptime local_ip public_ip
+neofetch --ascii_distro arch_small --disable uptime local_ip public_ip
 
-cal -3 -m
+cal -m
+echo ""
+
+liquidctl status
 echo ""
 
 # Check # of available updates

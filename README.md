@@ -36,7 +36,7 @@ Usage: router
 
 ## status  
 Print useful information to the user about the system  
-Dependencies: `neofetch cal checkupdates`
+Dependencies: `neofetch cal liquidctl checkupdates`
 ```
 Usage: status
 ```

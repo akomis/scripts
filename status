@@ -2,9 +2,6 @@
 
 neofetch --ascii_distro arch_small --disable uptime local_ip public_ip
 
-cal -m
-echo ""
-
 liquidctl status
 echo ""
 
